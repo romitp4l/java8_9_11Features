@@ -4,31 +4,31 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Example1 implements Test {
+public class Example1  {
 
-	@Override
-	public void display() {
-		// TODO Auto-generated method stub
-		
-		System.out.println(" in Example 1 display method ");
-		
-	}
-	
+//	@Override
+//	public void display() {
+//		// TODO Auto-generated method stub
+//		
+//		System.out.println(" in Example 1 display method ");
+//		
+//	}
+//	
 	
 	// way to access the dafault methods of the interface class
 	
-	public void abc() {
-		
-		// InterfaceName.super.methodName();
-		
-		// we are doing this because we are accessing a non static method 
-		// from main method that is static in nature.
-		
-		Test.super.subtract();
-		
-		
-		
-	}
+//	public void abc() {
+//		
+//		// InterfaceName.super.methodName();
+//		
+//		// we are doing this because we are accessing a non static method 
+//		// from main method that is static in nature.
+//		
+//		Test.super.subtract();
+//		
+//		
+//		
+//	}
 	
 	// static methods of the interfaces can't be overridden
 	
@@ -46,8 +46,9 @@ public class Example1 implements Test {
 		
 		
 		
+		
 		Example1 e1 = new Example1();
-		e1.abc();
+	//	e1.abc();
 		
 		
 		
@@ -66,6 +67,34 @@ public class Example1 implements Test {
 		//Collection - Interface 
 		//Collections - Class
 		Collections.synchronizedList(l);
+		
+		
+		
+		// Lambda Corresponds to an interface and specifically abstract method 
+		//present in interface
+		
+		String s = "Romit";
+		int  i = 10;
+		
+//		Test t = ()-> {
+//			System.out.println("in Example 1 display method ");
+//		};
+		
+		// for single statement in if/else block we don't need curly braces  similiarly here
+		
+		
+		
+		//Test t = ()-> System.out.println("in Example 1 display method implimentation ");
+		
+		Test t = () ->{
+			int y = 10;
+			System.out.println("Inside display method implimentation in Example 1 class . "+y);
+		};
+		
+		t.display();
+		
+		
 	}
+	
 
 }
