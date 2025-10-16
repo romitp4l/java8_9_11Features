@@ -73,6 +73,9 @@ public class Example1  {
 		// Lambda Corresponds to an interface and specifically abstract method 
 		//present in interface
 		
+		
+		//Whenever you write a lambda that interface should only have 1 abstract method
+		
 		String s = "Romit";
 		int  i = 10;
 		
