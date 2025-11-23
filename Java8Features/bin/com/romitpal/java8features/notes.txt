@@ -1,0 +1,30 @@
+What should we learn ? 
+
+>>> JAVA 8 features 
+
+default and static methods in interfaces.
+Functional Interfaces and Lambda expressions.
+java stream api for bulk data operations on collections.
+java time api.
+collection api improvements.
+concurrency api improvements.
+optional.
+
+
+
+****************************************************
+
+what are the predifined interfaces corresponding to them <like Supplier , Consumer  , Function>
+
+>>Types of methods int the interface / functional interface(incomplete method)    
+Method taking and returning.													  :
+
+
+
+
+
+
+
+Method doesn't take anything but return.										  :
+Method which takes an argument but return void.								      :
+Method which does not take anything and doesn't return anything.				  :
